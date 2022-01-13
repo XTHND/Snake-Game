@@ -4,6 +4,7 @@ import { randomGridPosition } from './grid.js'
 let food = getRandomFoodPosition()
 const EXPANSION_RATE = 1
 
+// Snake exp when collide w food
 export function update() {
   if (onSnake(food)) {
     expandSnake(EXPANSION_RATE)
@@ -19,6 +20,7 @@ export function draw(gameBoard) {
   gameBoard.appendChild(foodElement)
 }
 
+// Food Pos
 function getRandomFoodPosition() {
   let newFoodPosition
   while (newFoodPosition == null || onSnake(newFoodPosition)) {

@@ -1,6 +1,8 @@
 let inputDirection = { x: 0, y: 0 }
 let lastInputDirection = { x: 0, y: 0 }
 
+
+// Movement Binding
 window.addEventListener('keydown', e => {
   switch (e.key) {
     case 'ArrowUp':
